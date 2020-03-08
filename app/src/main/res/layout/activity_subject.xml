@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_layout_subjects"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SubjectActivity">
+
+    <TextView
+        android:id="@+id/subject_text_view"
+        android:text="@string/subjects"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/enter_subjects"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/subject_text_view"
+        android:text="@string/enter_subjects"/>
+
+    <LinearLayout
+        android:id="@+id/add_subjects_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/enter_subjects">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:elevation="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            app:cardBackgroundColor="@color/colorPrimary">
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_subjects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_subjects"
+            app:cardCornerRadius="8dp"
+            android:elevation="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_marginStart="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        android:id="@+id/dynamic_subjects_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/add_subjects_linear_layout"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/done"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"/>
+
+
+
+
+</RelativeLayout>

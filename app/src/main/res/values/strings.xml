@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Assistencia</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="notes">Notes</string>
+    <string name="settings">Settings</string>
+
+    <string name="subjects">Subjects</string>
+    <string name="enter_subjects">Enter your Subjects</string>
+    <string name="add">ADD</string>
+
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_monday">Mon</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_tuesday">Tue</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_wednesday">Wed</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_thursday">Thu</string>
+
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_friday">Fri</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_saturday">Sat</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_sunday">Sun</string>
+
+
+</resources>
